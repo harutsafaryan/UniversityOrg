@@ -25,7 +25,7 @@ namespace UniversityOrg.Services
 
             for (int i = 0; i < studentCount; i++)
             {
-                _teacherService.AddStudentbyTeacherId((teacherCount + i) % teacherCount, _studentService.Get(i));
+                _teacherService.AddStudentbyTeacherIndex((teacherCount + i) % teacherCount, _studentService.Get(i));
             }
         }
 

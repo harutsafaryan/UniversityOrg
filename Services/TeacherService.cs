@@ -43,11 +43,11 @@ namespace UniversityOrg.Services
             }
         }
 
-        public void AddStudentbyTeacherId(int teacherId, Student student)
+        public void AddStudentbyTeacherIndex(int teacherIndex, Student student)
         {
-            if (teacherId >= 0 && teacherId < _teachers.Count)
+            if (teacherIndex >= 0 && teacherIndex < _teachers.Count)
             {
-                _teachers[teacherId]._students.Add(student);
+                _teachers[teacherIndex]._students.Add(student);
             }
             else
             {
