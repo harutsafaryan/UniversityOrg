@@ -14,6 +14,9 @@ namespace UniversityOrg.Services
             _studentService = studentService;
         }
 
+        /// <summary>
+        /// Swap students to teachers
+        /// </summary>
         public void Swap()
         {
             int studentCount = _studentService.GetAll().Count;
@@ -26,6 +29,10 @@ namespace UniversityOrg.Services
             }
         }
 
+        /// <summary>
+        /// Get teacher with maximum numbur of students
+        /// </summary>
+        /// <returns>Return teacher with maximum number of students</returns>
         public Teacher GetTeacherWithMaxStudents()
         {
             List<Teacher> teacherList = _teacherService.GetAll();
