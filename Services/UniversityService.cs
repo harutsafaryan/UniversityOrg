@@ -21,7 +21,6 @@ namespace UniversityOrg.Services
         {
             int studentCount = _studentService.GetAll().Count;
             int teacherCount = _teacherService.GetAll().Count;
-            int studentsCountPerTecher = studentCount / teacherCount;
 
             for (int i = 0; i < studentCount; i++)
             {
